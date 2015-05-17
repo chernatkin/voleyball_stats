@@ -1,0 +1,21 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="volley.volleyball.TeamsActivity">
+
+    <item android:id="@+id/action_return_to_list"
+        android:title="Return to list"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_open_stats"
+        android:title="Open statistics"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_write_game_results"
+        android:title="Write game activities"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+</menu>

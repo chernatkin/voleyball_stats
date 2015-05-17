@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:padding="5dp"
+    android:orientation="vertical"
+    tools:context="volley.volleyball.ServeActivity.ServeTypeFragment">
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="SERVE"
+        android:textSize="30sp"
+        android:background="#FF3333"
+        android:layout_margin="5dp"
+        android:id="@+id/serve_type_serve_button"
+        android:layout_weight="1"
+        android:onClick="onServe"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="ATTACK"
+        android:textSize="30sp"
+        android:background="#4444FF"
+        android:layout_margin="5dp"
+        android:id="@+id/serve_type_attack_button"
+        android:layout_weight="1"
+        android:onClick="onAttack"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="BLOCK"
+        android:textSize="30sp"
+        android:background="#99FF33"
+        android:layout_margin="5dp"
+        android:id="@+id/serve_type_block_button"
+        android:layout_weight="1"
+        android:onClick="onBlock"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="PASS"
+        android:textSize="30sp"
+        android:background="#EEEE00"
+        android:layout_margin="5dp"
+        android:id="@+id/serve_type_pass_button"
+        android:layout_weight="1"
+        android:onClick="onPass"/>
+
+</LinearLayout>

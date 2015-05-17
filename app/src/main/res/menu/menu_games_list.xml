@@ -1,0 +1,10 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".GamesListActivity">
+
+    <item android:id="@+id/action_create_new_game"
+        android:title="Create new game"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

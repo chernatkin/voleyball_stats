@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/games_list_item_date"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/games_list_item_first_team"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/games_list_item_second_team"
+        android:layout_weight="1"
+        android:textSize="20sp"/>
+</LinearLayout>

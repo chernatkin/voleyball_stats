@@ -1,0 +1,39 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="volley.volleyball.ServeActivity">
+
+    <item android:id="@+id/action_first_set"
+        android:title="First set"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_second_set"
+        android:title="Second set"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_third_set"
+        android:title="Third set"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_fourth_set"
+        android:title="Fourth set"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_fifth_set"
+        android:title="Fifth set"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_finish_write"
+        android:title="Stop writing"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_revert_previous"
+        android:title="Revert previous"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>
