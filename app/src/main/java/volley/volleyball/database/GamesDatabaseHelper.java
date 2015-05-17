@@ -354,6 +354,11 @@ public class GamesDatabaseHelper extends SQLiteOpenHelper{
         public void setSecondTeam(String secondTeam) {
             this.secondTeam = secondTeam;
         }
+
+        @Override
+        public String toString() {
+            return firstTeam + " " + secondTeam;
+        }
     }
 
     public static class TeamMemberEntry implements BaseColumns {

@@ -4,13 +4,17 @@ import android.app.ActionBar;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
 
+import volley.volleyball.StringUtils;
 import volley.volleyball.database.GamesDatabaseHelper;
 import volley.volleyball.R;
 import volley.volleyball.adapters.GameListAdapter;
@@ -26,6 +30,8 @@ public class GamesListActivity extends Activity{
 
     GameListAdapter adapter;
 
+    private String filterString;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,6 +41,21 @@ public class GamesListActivity extends Activity{
             bar.setIcon(R.mipmap.volleyball_ball);
             bar.setTitle("Games list");
         }
+
+        final EditText firstTeamFilterInput = (EditText)findViewById(R.id.games_list_filter);
+        firstTeamFilterInput.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) { }
+
+            @Override
+            public void afterTextChanged(final Editable s) {
+                filterString = StringUtils.toString(s);
+                adapter.getFilter().filter(filterString);
+            }
+        });
     }
 
     @Override
@@ -46,6 +67,10 @@ public class GamesListActivity extends Activity{
         adapter = new GameListAdapter(this, R.layout.games_list_item, dbHelper.fetchAllGames());
         listView.setAdapter(adapter);
         registerForContextMenu(listView);
+
+        if(!StringUtils.isEmpty(filterString)){
+            adapter.getFilter().filter(filterString);
+        }
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -6,16 +6,16 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
+import java.util.Locale;
 
 import volley.volleyball.ColorUtils;
 
 public class ObjectArrayAdapter<T> extends ArrayAdapter<T>{
 
-    protected static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd");
+    protected static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd", Locale.US);
 
     protected final int itemResourceId;
 
@@ -35,7 +35,7 @@ public class ObjectArrayAdapter<T> extends ArrayAdapter<T>{
         return convertView;
     }
 
-    protected <T extends View> T setBackgroundColor(final T view, final int color){
+    protected <V extends View> V setBackgroundColor(final V view, final int color){
         view.setBackgroundColor(color);
         return view;
     }

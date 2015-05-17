@@ -15,6 +15,27 @@
             android:layout_gravity="right"
             android:onClick="onCreateNewClick"/>
 
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:text="Filter:"
+            android:gravity="right"/>
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/games_list_filter"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"/>
+    </LinearLayout>
 
     <ListView
             android:layout_width="fill_parent"
