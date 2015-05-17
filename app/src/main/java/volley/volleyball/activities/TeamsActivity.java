@@ -1,4 +1,4 @@
-package volley.volleyball;
+package volley.volleyball.activities;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -19,6 +19,10 @@ import java.util.GregorianCalendar;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
+
+import volley.volleyball.database.GamesDatabaseHelper;
+import volley.volleyball.R;
+import volley.volleyball.StringUtils;
 
 
 public class TeamsActivity extends Activity {

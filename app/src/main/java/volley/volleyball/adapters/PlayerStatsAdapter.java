@@ -1,13 +1,16 @@
-package volley.volleyball;
+package volley.volleyball.adapters;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
+
+import volley.volleyball.database.GamesDatabaseHelper;
+import volley.volleyball.R;
+import volley.volleyball.ResultType;
+import volley.volleyball.StringUtils;
 
 public class PlayerStatsAdapter extends ObjectArrayAdapter<GamesDatabaseHelper.PlayerStatsEntry> {
 

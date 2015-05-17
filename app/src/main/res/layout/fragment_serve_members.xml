@@ -4,7 +4,7 @@
     android:layout_height="fill_parent"
     android:padding="10dp"
     android:background="#ffffff"
-    tools:context="volley.volleyball.ServeActivity.ServeMembersFragment">
+    tools:context="volley.volleyball.activities.ServeActivity.ServeMembersFragment">
 
 
     <ListView

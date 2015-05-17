@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     android:padding="1dp"
     android:orientation="vertical"
-    tools:context="volley.volleyball.PlayerServeStatsActivity.StatTableFragment">
+    tools:context="volley.volleyball.activities.PlayerServeStatsActivity.StatTableFragment">
 
     <ListView
         android:layout_width="fill_parent"

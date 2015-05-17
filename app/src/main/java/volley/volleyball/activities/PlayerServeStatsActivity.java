@@ -1,4 +1,4 @@
-package volley.volleyball;
+package volley.volleyball.activities;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -17,6 +17,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ListView;
+
+import volley.volleyball.database.GamesDatabaseHelper;
+import volley.volleyball.adapters.PlayerStatsAdapter;
+import volley.volleyball.R;
+import volley.volleyball.ServeType;
 
 
 public class PlayerServeStatsActivity extends Activity {

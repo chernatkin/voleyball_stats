@@ -10,7 +10,7 @@
     android:padding="10dp"
     android:background="#ffffff"
     android:orientation="vertical"
-    tools:context="volley.volleyball.TeamsActivity">
+    tools:context="volley.volleyball.activities.TeamsActivity">
 
     <DatePicker
         android:layout_width="fill_parent"

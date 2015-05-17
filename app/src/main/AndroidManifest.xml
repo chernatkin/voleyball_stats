@@ -11,7 +11,7 @@
         android:label="Volleyball log"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".GamesListActivity"
+            android:name=".activities.GamesListActivity"
             android:label="Volleyball log">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,15 +19,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TeamsActivity"
+            android:name=".activities.TeamsActivity"
             android:label="Teams and players" >
         </activity>
         <activity
-            android:name=".ServeActivity"
+            android:name=".activities.ServeActivity"
             android:label="Actions" >
         </activity>
         <activity
-            android:name=".PlayerServeStatsActivity"
+            android:name=".activities.PlayerServeStatsActivity"
             android:label="Statistics" >
         </activity>
     </application>

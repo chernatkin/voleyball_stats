@@ -1,4 +1,4 @@
-package volley.volleyball;
+package volley.volleyball.activities;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -10,6 +10,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import volley.volleyball.database.GamesDatabaseHelper;
+import volley.volleyball.R;
+import volley.volleyball.adapters.GameListAdapter;
 
 
 public class GamesListActivity extends Activity{

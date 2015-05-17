@@ -1,16 +1,13 @@
-package volley.volleyball;
+package volley.volleyball.activities;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
 
 import android.app.ActionBar;
 import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.graphics.Color;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -22,8 +19,12 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import volley.volleyball.database.GamesDatabaseHelper;
+import volley.volleyball.R;
+import volley.volleyball.ResultType;
+import volley.volleyball.ServeType;
 
 
 public class ServeActivity extends Activity {

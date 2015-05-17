@@ -5,7 +5,7 @@
     android:background="#ffffff"
     android:padding="5dp"
     android:orientation="vertical"
-    tools:context="volley.volleyball.ServeActivity.ServeTypeFragment">
+    tools:context="volley.volleyball.activities.ServeActivity.ServeTypeFragment">
 
     <Button
         android:layout_width="fill_parent"

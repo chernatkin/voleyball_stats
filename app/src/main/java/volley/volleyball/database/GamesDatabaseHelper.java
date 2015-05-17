@@ -1,4 +1,4 @@
-package volley.volleyball;
+package volley.volleyball.database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -10,14 +10,16 @@ import android.provider.BaseColumns;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+
+import volley.volleyball.ResultType;
+import volley.volleyball.ServeType;
+import volley.volleyball.StringUtils;
 
 public class GamesDatabaseHelper extends SQLiteOpenHelper{
 
@@ -364,10 +366,10 @@ public class GamesDatabaseHelper extends SQLiteOpenHelper{
 
         private String fullName = "";
 
-        protected TeamMemberEntry() {
+        public TeamMemberEntry() {
         }
 
-        protected TeamMemberEntry(long id, String fullName) {
+        public TeamMemberEntry(long id, String fullName) {
             this.id = id;
             this.fullName = fullName;
         }

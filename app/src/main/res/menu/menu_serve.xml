@@ -1,6 +1,6 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="volley.volleyball.ServeActivity">
+    tools:context="volley.volleyball.activities.ServeActivity">
 
     <item android:id="@+id/action_first_set"
         android:title="First set"

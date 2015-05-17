@@ -1,4 +1,4 @@
-package volley.volleyball;
+package volley.volleyball.adapters;
 
 
 import android.content.Context;
@@ -10,6 +10,8 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
+
+import volley.volleyball.ColorUtils;
 
 public class ObjectArrayAdapter<T> extends ArrayAdapter<T>{
 

@@ -1,17 +1,17 @@
-package volley.volleyball;
+package volley.volleyball.adapters;
 
 
 import android.content.Context;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.text.SimpleDateFormat;
 import java.util.List;
 
-public class GameListAdapter extends ObjectArrayAdapter<GamesDatabaseHelper.GameEntry>{
+import volley.volleyball.database.GamesDatabaseHelper;
+import volley.volleyball.R;
+
+public class GameListAdapter extends ObjectArrayAdapter<GamesDatabaseHelper.GameEntry> {
 
     public GameListAdapter(Context context, int textViewResourceId, List<GamesDatabaseHelper.GameEntry> objects) {
         super(context, textViewResourceId, objects);
