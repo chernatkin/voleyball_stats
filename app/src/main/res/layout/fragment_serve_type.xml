@@ -10,7 +10,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="SERVE"
+        android:text="@string/serve_action"
         android:textSize="30sp"
         android:background="#FF3333"
         android:layout_margin="5dp"
@@ -21,7 +21,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="ATTACK"
+        android:text="@string/attack_action"
         android:textSize="30sp"
         android:background="#4444FF"
         android:layout_margin="5dp"
@@ -32,7 +32,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="BLOCK"
+        android:text="@string/block_action"
         android:textSize="30sp"
         android:background="#99FF33"
         android:layout_margin="5dp"
@@ -43,7 +43,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="PASS"
+        android:text="@string/pass_action"
         android:textSize="30sp"
         android:background="#EEEE00"
         android:layout_margin="5dp"

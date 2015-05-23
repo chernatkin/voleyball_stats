@@ -4,7 +4,7 @@
     tools:context=".GamesListActivity">
 
     <item android:id="@+id/action_create_new_game"
-        android:title="Create new game"
+        android:title="@string/create_new_game_menu"
         android:orderInCategory="100"
         android:showAsAction="never" />
 </menu>

@@ -8,7 +8,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="SUCCESS"
+        android:text="@string/success_action_result_label"
         android:textSize="30sp"
         android:background="#66FF66"
         android:layout_margin="10dp"
@@ -19,7 +19,7 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="FAIL"
+        android:text="@string/fail_action_result_label"
         android:textSize="30sp"
         android:background="#FF4444"
         android:layout_margin="10dp"

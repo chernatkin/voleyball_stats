@@ -102,7 +102,7 @@ public class TeamsActivity extends Activity {
         final LinearLayout inputList = (LinearLayout)findViewById(R.id.edit_game_team_members_list);
 
         if(!isNamesUnique(inputList)){
-            final Toast toast = Toast.makeText(this, "Players list has duplicate", Toast.LENGTH_SHORT);
+            final Toast toast = Toast.makeText(this, getString(R.string.players_duplicates_fail_msg), Toast.LENGTH_SHORT);
             toast.show();
             return;
         }

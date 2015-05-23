@@ -1,17 +1,49 @@
 <resources>
     <string name="app_name">VolleyBall</string>
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-    <string name="title_activity_teams">TeamsActivity</string>
-    <string name="title_activity_serve">ServeActivity</string>
+    <string name="games_list_title">Games list</string>
+    <string name="edit_game_menu">Edit game</string>
+    <string name="open_stat_menu">Open statistics</string>
+    <string name="create_new_game_menu">Create new game</string>
+    <string name="create_new_game">Create new</string>
+    <string name="filter_game">Filter:</string>
 
+    <string name="game_edit_title">Teams and players</string>
+    <string name="first_team_label">First Team:</string>
+    <string name="second_team_label">Second Team:</string>
+    <string name="team_members_label">Team members:</string>
+    <string name="save_game">Save</string>
+    <string name="players_duplicates_fail_msg">Players list has duplicate</string>
+    <string name="return_to_games_list_menu">Return to list</string>
+    <string name="write_game_activities_menu">Write game activities</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="action_default_title">Actions</string>
+    <string name="action_players_title">Player selection</string>
+    <string name="action_type_title">Action type</string>
+    <string name="action_result_title">Action result</string>
+    <string name="action_set_number_title">Set #</string>
+    <string name="action_player_selection_fail_msg">Player not selected</string>
+    <string name="action_type_selection_fail_msg">Action type not selected</string>
+    <string name="action_save_success_msg">Saved</string>
+    <string name="serve_action">SERVE</string>
+    <string name="attack_action">ATTACK</string>
+    <string name="pass_action">PASS</string>
+    <string name="block_action">BLOCK</string>
+    <string name="success_action_result_label">SUCCESS</string>
+    <string name="fail_action_result_label">FAIL</string>
+    <string name="last_record_deleted_toast">Последняя запись удалена</string>
+    <string name="first_set_menu">First set</string>
+    <string name="second_set_menu">Second set</string>
+    <string name="third_set_menu">Third set</string>
+    <string name="fourth_set_menu">Fourth set</string>
+    <string name="fifth_set_menu">Fifth set</string>
+    <string name="stop_writing_menu">Stop writing</string>
+    <string name="revert_previous_menu">Revert previous</string>
 
-<!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_player_serve_stats">PlayerServeStatsActivity</string>
+    <string name="player_column">Player</string>
+    <string name="success_action_result_column">+</string>
+    <string name="fail_action_result_column">-</string>
+
+    <string name="statistics_title">Statistics</string>
+
 </resources>

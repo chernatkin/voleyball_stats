@@ -3,37 +3,37 @@
     tools:context="volley.volleyball.activities.ServeActivity">
 
     <item android:id="@+id/action_first_set"
-        android:title="First set"
+        android:title="@string/first_set_menu"
         android:orderInCategory="100"
         android:showAsAction="never" />
 
     <item android:id="@+id/action_second_set"
-        android:title="Second set"
+        android:title="@string/second_set_menu"
         android:orderInCategory="100"
         android:showAsAction="never" />
 
     <item android:id="@+id/action_third_set"
-        android:title="Third set"
+        android:title="@string/third_set_menu"
         android:orderInCategory="100"
         android:showAsAction="never" />
 
     <item android:id="@+id/action_fourth_set"
-        android:title="Fourth set"
+        android:title="@string/fourth_set_menu"
         android:orderInCategory="100"
         android:showAsAction="never" />
 
     <item android:id="@+id/action_fifth_set"
-        android:title="Fifth set"
+        android:title="@string/fifth_set_menu"
         android:orderInCategory="100"
         android:showAsAction="never" />
 
     <item android:id="@+id/action_finish_write"
-        android:title="Stop writing"
+        android:title="@string/stop_writing_menu"
         android:orderInCategory="100"
         android:showAsAction="never" />
 
     <item android:id="@+id/action_revert_previous"
-        android:title="Revert previous"
+        android:title="@string/revert_previous_menu"
         android:orderInCategory="100"
         android:showAsAction="never" />
 </menu>

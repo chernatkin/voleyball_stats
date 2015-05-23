@@ -39,7 +39,7 @@ public class GamesListActivity extends Activity{
         final ActionBar bar = getActionBar();
         if(bar != null){
             bar.setIcon(R.mipmap.volleyball_ball);
-            bar.setTitle("Games list");
+            bar.setTitle(getString(R.string.games_list_title));
         }
 
         final EditText firstTeamFilterInput = (EditText)findViewById(R.id.games_list_filter);
@@ -122,8 +122,8 @@ public class GamesListActivity extends Activity{
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         if (v.getId() == R.id.games_list_view) {
-            menu.add(Menu.NONE, EDIT_GAME_ITEM_ID, 1, "Edit game");
-            menu.add(Menu.NONE, OPEN_STATS_ITEM_ID, 1, "Open statistics");
+            menu.add(Menu.NONE, EDIT_GAME_ITEM_ID, 1, getString(R.string.edit_game_menu));
+            menu.add(Menu.NONE, OPEN_STATS_ITEM_ID, 1, getString(R.string.open_stat_menu));
         }
     }
 

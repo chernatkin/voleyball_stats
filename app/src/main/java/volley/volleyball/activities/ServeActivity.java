@@ -45,7 +45,7 @@ public class ServeActivity extends Activity {
     ServeType serveType;
     ResultType resultType;
     int setNumber = 1;
-    String stageName = "Player selection";
+    String stageName = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,19 +70,19 @@ public class ServeActivity extends Activity {
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
-        mViewPager = (ViewPager) findViewById(R.id.pager);
+        mViewPager = (ViewPager) findViewById(R.id.actions_pager);
         mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener(){
             @Override
             public void onPageSelected(final int position) {
                 switch (position){
                     case 0:
-                        setStageName("Player selection");
+                        setStageName(getString(R.string.action_players_title));
                         break;
                     case 1:
-                        setStageName("Action type");
+                        setStageName(getString(R.string.action_type_title));
                         break;
                     case 2:
-                        setStageName("Action result");
+                        setStageName(getString(R.string.action_result_title));
                         break;
                     default:
                         break;
@@ -92,7 +92,7 @@ public class ServeActivity extends Activity {
         });
         mViewPager.setAdapter(mSectionsPagerAdapter);
 
-        setActionBarTitle(setNumber, stageName);
+        setActionBarTitle(setNumber, getString(R.string.action_players_title));
     }
 
     @Override
@@ -132,7 +132,7 @@ public class ServeActivity extends Activity {
         else if (id == R.id.action_revert_previous) {
             final int count = db.deleteLastGameActivity(gameEntry.getId());
             if(count > 0){
-                final Toast toast = Toast.makeText(this, "Last record deleted", Toast.LENGTH_SHORT);
+                final Toast toast = Toast.makeText(this, getString(R.string.last_record_deleted_toast), Toast.LENGTH_SHORT);
                 toast.show();
             }
             return true;
@@ -155,26 +155,30 @@ public class ServeActivity extends Activity {
     }
 
     private void setActionBarTitle(final int setNumber, final String stageName){
-        getActionBar().setTitle("Set #" + setNumber + "   " + stageName);
+        final ActionBar bar = getActionBar();
+        if(bar == null){
+            return;
+        }
+        bar.setTitle(getString(R.string.action_set_number_title) + setNumber + "   " + stageName);
     }
 
     public void onServe(View view){
-        onAction(view, ServeType.SERVE);
+        onAction(ServeType.SERVE);
     }
 
     public void onAttack(View view){
-        onAction(view, ServeType.ATTACK);
+        onAction(ServeType.ATTACK);
     }
 
     public void onBlock(View view){
-        onAction(view, ServeType.BLOCK);
+        onAction(ServeType.BLOCK);
     }
 
     public void onPass(View view){
-        onAction(view, ServeType.PASS);
+        onAction(ServeType.PASS);
     }
 
-    public void onAction(View view, ServeType type){
+    public void onAction(ServeType type){
         serveType = type;
         mViewPager.setCurrentItem(2, false);
     }
@@ -185,31 +189,31 @@ public class ServeActivity extends Activity {
     }
 
     public void onSuccessResult(View view){
-        onResult(view, ResultType.SUCCESS);
+        onResult(ResultType.SUCCESS);
     }
 
     public void onFailResult(View view){
-        onResult(view, ResultType.FAIL);
+        onResult(ResultType.FAIL);
     }
 
-    public void onResult(final View view, final ResultType type){
+    public void onResult(final ResultType type){
         resultType = type;
-        String msg;
+        final int msg;
         if(teamMemberId == -1){
             mViewPager.setCurrentItem(0, false);
-            msg = "Player not selected";
+            msg = R.string.action_player_selection_fail_msg;
         }
         else if(serveType == null){
             mViewPager.setCurrentItem(1, false);
-            msg = "Action type not selected";
+            msg = R.string.action_type_selection_fail_msg;
         }
         else{
             db.putGameActivity(gameEntry.getId(), teamMemberId, new Date(), setNumber, serveType, type);
             mViewPager.setCurrentItem(0, false);
-            msg = "Saved";
+            msg = R.string.action_save_success_msg;
         }
 
-        final Toast toast = Toast.makeText(this, msg, Toast.LENGTH_SHORT);
+        final Toast toast = Toast.makeText(this, getString(msg), Toast.LENGTH_SHORT);
         toast.show();
 
         serveType = null;

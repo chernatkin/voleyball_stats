@@ -58,7 +58,7 @@ public class PlayerServeStatsActivity extends Activity {
 
         mSectionsPagerAdapter = new SectionsPagerAdapter(getFragmentManager());
 
-        mViewPager = (ViewPager) findViewById(R.id.pager);
+        mViewPager = (ViewPager) findViewById(R.id.stats_pager);
         mViewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener(){
             @Override
             public void onPageSelected(final int position) {
@@ -70,7 +70,11 @@ public class PlayerServeStatsActivity extends Activity {
     }
 
     private void setCurrentServeType(final ServeType serveType){
-        getActionBar().setTitle(serveType.name() + "   Statistics");
+        final ActionBar bar = getActionBar();
+        if(bar == null) {
+            return;
+        }
+        bar.setTitle(getString(serveType.getStringId()) + "   " + getString(R.string.statistics_title));
     }
 
     private List<GamesDatabaseHelper.PlayerStatsEntry> filterStats(final ServeType serveType){

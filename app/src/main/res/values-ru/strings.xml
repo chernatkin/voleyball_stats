@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">VolleyBall</string>
+
+    <string name="games_list_title">Список игр</string>
+    <string name="edit_game_menu">Редактировать игру</string>
+    <string name="open_stat_menu">Открыть статистику</string>
+    <string name="create_new_game_menu">Создать новую игру</string>
+    <string name="create_new_game">Создать новую</string>
+    <string name="filter_game">Фильтр:</string>
+
+    <string name="game_edit_title">Редактировать игру</string>
+    <string name="first_team_label">Первая комманда:</string>
+    <string name="second_team_label">Вторая команда:</string>
+    <string name="team_members_label">Игроки:</string>
+    <string name="save_game">Сохранить</string>
+    <string name="players_duplicates_fail_msg">Некоторые имена игроков дублируются</string>
+    <string name="return_to_games_list_menu">Вернуться к вписку игр</string>
+    <string name="write_game_activities_menu">Записать игровые действия</string>
+
+    <string name="action_default_title">Подачи</string>
+    <string name="action_players_title">Выбор игрока</string>
+    <string name="action_type_title">Действие</string>
+    <string name="action_result_title">Результат</string>
+    <string name="action_set_number_title">Сет №</string>
+    <string name="action_player_selection_fail_msg">Не выбран игрок</string>
+    <string name="action_type_selection_fail_msg">Не выбрано действие</string>
+    <string name="action_save_success_msg">Сохранено</string>
+    <string name="serve_action">ПОДАЧА</string>
+    <string name="attack_action">НАПАДЕНИЕ</string>
+    <string name="pass_action">ПРИЕМ</string>
+    <string name="block_action">БЛОК</string>
+    <string name="success_action_result_label">УСПЕШНО</string>
+    <string name="fail_action_result_label">НЕ УСПЕШНО</string>
+    <string name="last_record_deleted_toast">Последняя запись удалена</string>
+    <string name="first_set_menu">Первый сет</string>
+    <string name="second_set_menu">Второй сет</string>
+    <string name="third_set_menu">Третий сет</string>
+    <string name="fourth_set_menu">Четвертый сет</string>
+    <string name="fifth_set_menu">Пятый сет</string>
+    <string name="stop_writing_menu">Завершить запись</string>
+    <string name="revert_previous_menu">Удалить предыдущую запись</string>
+
+    <string name="player_column">Игрок</string>
+    <string name="success_action_result_column">+</string>
+    <string name="fail_action_result_column">-</string>
+
+    <string name="statistics_title">Статистика</string>
+
+</resources>

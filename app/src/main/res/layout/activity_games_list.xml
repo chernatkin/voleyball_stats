@@ -10,7 +10,7 @@
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Create new"
+            android:text="@string/create_new_game"
             android:id="@+id/create_new_game_button"
             android:layout_gravity="right"
             android:onClick="onCreateNewClick"/>
@@ -25,13 +25,14 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="10dp"
             android:textSize="20sp"
-            android:text="Filter:"
+            android:text="@string/filter_game"
             android:gravity="right"/>
 
         <EditText
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:id="@+id/games_list_filter"
+            android:inputType="text"
             android:layout_weight="1"
             android:layout_marginRight="10dp"
             android:textSize="20sp"/>
