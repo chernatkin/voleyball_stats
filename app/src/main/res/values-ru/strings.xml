@@ -32,7 +32,7 @@
     <string name="dig_action">ПРИЕМ АТАКИ</string>
     <string name="success_action_result_label">УСПЕШНО</string>
     <string name="fail_action_result_label">НЕ УСПЕШНО</string>
-    <string name="regular_action_result_label">СРЕДНЕ</string>
+    <string name="regular_action_result_label">УДОВЛ</string>
     <string name="last_record_deleted_toast">Последняя запись удалена</string>
     <string name="first_set_menu">Первый сет</string>
     <string name="second_set_menu">Второй сет</string>
@@ -45,7 +45,7 @@
     <string name="player_column">Игрок</string>
     <string name="success_action_result_column">успешно</string>
     <string name="fail_action_result_column">не успешно</string>
-    <string name="regular_action_result_column">средне</string>
+    <string name="regular_action_result_column">удовл</string>
 
     <string name="statistics_title">Статистика</string>
 

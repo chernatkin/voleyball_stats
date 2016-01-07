@@ -32,7 +32,7 @@
     <string name="dig_action">DIG</string>
     <string name="success_action_result_label">SUCCESS</string>
     <string name="fail_action_result_label">FAIL</string>
-    <string name="regular_action_result_label">REGULAR</string>
+    <string name="regular_action_result_label">NORMAL</string>
     <string name="last_record_deleted_toast">Последняя запись удалена</string>
     <string name="first_set_menu">First set</string>
     <string name="second_set_menu">Second set</string>
@@ -45,7 +45,7 @@
     <string name="player_column">Player</string>
     <string name="success_action_result_column">success</string>
     <string name="fail_action_result_column">fail</string>
-    <string name="regular_action_result_column">regular</string>
+    <string name="regular_action_result_column">normal</string>
 
     <string name="statistics_title">Statistics</string>
 
