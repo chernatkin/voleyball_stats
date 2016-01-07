@@ -3,5 +3,6 @@ package volley.volleyball;
 
 public enum ResultType {
     SUCCESS,
-    FAIL
+    FAIL,
+    REGULAR
 }

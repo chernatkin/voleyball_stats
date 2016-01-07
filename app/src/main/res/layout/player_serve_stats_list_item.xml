@@ -12,7 +12,7 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="@string/player_column"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:layout_weight="1"
             android:background="#ffffff"
             android:layout_margin="1dp"
@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/success_action_result_column"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:background="#ffffff"
             android:layout_margin="1dp"
             android:width="80dp"
@@ -34,11 +34,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/fail_action_result_column"
-            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:background="#ffffff"
             android:layout_margin="1dp"
             android:width="80dp"
             android:gravity="center_horizontal"
             android:id="@+id/serve_stats_fail_count"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regular_action_result_column"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="#ffffff"
+        android:layout_margin="1dp"
+        android:width="80dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/serve_stats_regular_count"/>
 
 </LinearLayout>

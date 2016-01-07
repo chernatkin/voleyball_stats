@@ -178,6 +178,10 @@ public class ServeActivity extends Activity {
         onAction(ServeType.PASS);
     }
 
+    public void onDig(View view){
+        onAction(ServeType.DIG);
+    }
+
     public void onAction(ServeType type){
         serveType = type;
         mViewPager.setCurrentItem(2, false);
@@ -194,6 +198,10 @@ public class ServeActivity extends Activity {
 
     public void onFailResult(View view){
         onResult(ResultType.FAIL);
+    }
+
+    public void onRegularResult(View view){
+        onResult(ResultType.REGULAR);
     }
 
     public void onResult(final ResultType type){

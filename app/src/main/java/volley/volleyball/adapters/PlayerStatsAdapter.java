@@ -31,10 +31,13 @@ public class PlayerStatsAdapter extends ObjectArrayAdapter<GamesDatabaseHelper.P
         setBackgroundColor(successView, color);
         final TextView failView = (TextView)convertView.findViewById(R.id.serve_stats_fail_count);
         setBackgroundColor(failView, color);
+        final TextView regularView = (TextView)convertView.findViewById(R.id.serve_stats_regular_count);
+        setBackgroundColor(regularView, color);
 
         playerView.setText(getItem(position).getPlayerName());
         successView.setText(StringUtils.toString(getItem(position).getResults().get(ResultType.SUCCESS)));
         failView.setText(StringUtils.toString(getItem(position).getResults().get(ResultType.FAIL)));
+        regularView.setText(StringUtils.toString(getItem(position).getResults().get(ResultType.REGULAR)));
         return convertView;
     }
 }

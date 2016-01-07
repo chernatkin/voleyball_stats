@@ -27,10 +27,12 @@
     <string name="action_save_success_msg">Сохранено</string>
     <string name="serve_action">ПОДАЧА</string>
     <string name="attack_action">НАПАДЕНИЕ</string>
-    <string name="pass_action">ПРИЕМ</string>
+    <string name="pass_action">ПРИЕМ ПОДАЧИ</string>
     <string name="block_action">БЛОК</string>
+    <string name="dig_action">ПРИЕМ АТАКИ</string>
     <string name="success_action_result_label">УСПЕШНО</string>
     <string name="fail_action_result_label">НЕ УСПЕШНО</string>
+    <string name="regular_action_result_label">СРЕДНЕ</string>
     <string name="last_record_deleted_toast">Последняя запись удалена</string>
     <string name="first_set_menu">Первый сет</string>
     <string name="second_set_menu">Второй сет</string>
@@ -41,8 +43,9 @@
     <string name="revert_previous_menu">Удалить предыдущую запись</string>
 
     <string name="player_column">Игрок</string>
-    <string name="success_action_result_column">+</string>
-    <string name="fail_action_result_column">-</string>
+    <string name="success_action_result_column">успешно</string>
+    <string name="fail_action_result_column">не успешно</string>
+    <string name="regular_action_result_column">средне</string>
 
     <string name="statistics_title">Статистика</string>
 

@@ -215,6 +215,7 @@ public class GamesDatabaseHelper extends SQLiteOpenHelper{
                                 TeamMemberEntry.COLUMN_NAME_FULL_NAME,
                                 GameActivityEntry.COLUMN_NAME_SERVE_TYPE,
                                 GameActivityEntry.COLUMN_NAME_RESULT_TYPE,
+
                                 TeamMemberEntry.COLUMN_NAME_FULL_NAME)
                         , new String[] {String.valueOf(gameId)});
 

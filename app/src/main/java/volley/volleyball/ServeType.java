@@ -6,7 +6,8 @@ public enum ServeType {
     SERVE(0, R.string.serve_action),
     ATTACK(1, R.string.attack_action),
     BLOCK(2, R.string.block_action),
-    PASS(3, R.string.pass_action);
+    PASS(3, R.string.pass_action),
+    DIG(4, R.string.dig_action);
 
     private final int value;
     private final int stringId;

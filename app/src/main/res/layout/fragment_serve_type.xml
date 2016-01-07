@@ -21,6 +21,17 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:text="@string/pass_action"
+        android:textSize="30sp"
+        android:background="#EEEE00"
+        android:layout_margin="5dp"
+        android:id="@+id/serve_type_pass_button"
+        android:layout_weight="1"
+        android:onClick="onPass"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         android:text="@string/attack_action"
         android:textSize="30sp"
         android:background="#4444FF"
@@ -43,12 +54,11 @@
     <Button
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:text="@string/pass_action"
+        android:text="@string/dig_action"
         android:textSize="30sp"
-        android:background="#EEEE00"
+        android:background="#EEEEEE"
         android:layout_margin="5dp"
-        android:id="@+id/serve_type_pass_button"
+        android:id="@+id/serve_type_dig_button"
         android:layout_weight="1"
-        android:onClick="onPass"/>
-
+        android:onClick="onDig"/>
 </LinearLayout>
